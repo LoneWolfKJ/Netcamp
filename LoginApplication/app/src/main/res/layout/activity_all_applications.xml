@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/surprise_app"
+    tools:context=".AllApplications">
+
+    <ImageView
+        android:id="@+id/calculatorButton"
+        android:layout_width="153dp"
+        android:layout_height="155dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/cameraButton"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/cameraDesc"
+        app:srcCompat="@mipmap/calculator_foreground"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="174dp"
+        android:layout_height="153dp"
+        android:layout_above="@+id/mediaPlayerDesc"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cameraDesc"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@mipmap/camera_foreground"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <ImageView
+        android:id="@+id/mediaPlayerButton"
+        android:layout_width="174dp"
+        android:layout_height="155dp"
+        android:layout_above="@+id/specialDesc"
+        android:layout_marginBottom="30dp"
+        android:layout_alignTop="@+id/mediaPlayerDesc"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@mipmap/media_player_foreground"/>
+
+    <ImageView
+        android:id="@+id/surpriseButton"
+        android:layout_width="166dp"
+        android:layout_height="153dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/mediaPlayerDesc"
+        android:layout_alignTop="@+id/specialDesc"
+        app:srcCompat="@mipmap/surprise_foreground"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="563dp" />
+
+    <TextView
+        android:id="@+id/calculatorDesc"
+        android:layout_width="153dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/cameraButton"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/cameraButton"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Calculator"
+        android:textColor="#F0079AB2"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <TextView
+        android:id="@+id/cameraDesc"
+        android:layout_width="174dp"
+        android:layout_height="155dp"
+        android:layout_above="@id/mediaPlayerButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Camera"
+        android:textColor="#F0079AB2"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <TextView
+        android:id="@+id/mediaPlayerDesc"
+        android:layout_width="174dp"
+        android:layout_height="153dp"
+        android:layout_above="@+id/surpriseButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center_horizontal"
+        android:text="Media Player"
+        android:textColor="#F0079AB2"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/specialDesc"
+        android:layout_width="166dp"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Surprise"
+        android:textColor="#F0079AB2"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+</RelativeLayout>

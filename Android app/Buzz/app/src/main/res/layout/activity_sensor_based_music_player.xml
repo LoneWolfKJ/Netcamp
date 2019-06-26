@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/description_magic_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/surprise_app"
+    tools:context=".SensorBasedMusicPlayer">
+
+    <ImageButton
+        android:id="@+id/playNpause"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/play_big"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/images"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/direcrions_magic_music"
+        android:layout_width="350dp"
+        android:layout_height="176dp"
+        android:layout_above="@+id/playNpause"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/string_magic_music"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#BCFED053"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/backMagicalMusicPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@mipmap/back_foreground" />
+</RelativeLayout>
