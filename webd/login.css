@@ -1,0 +1,139 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* pointer-events: none; */
+    background: url(library.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.name {
+    font-family: cursive;
+    font-weight: 1000;
+    font-size: 75px;
+    text-align: left;
+    color: darkgray;
+    height: 105px;
+    width: 83%;
+    margin : 15px 80px 20px 130px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+}
+
+.bit {
+    height: 100px;
+    position: fixed;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+.title {
+    font-family: cursive;
+    font-weight: 1200;
+    font-size: 75px;
+    text-align: center;
+    color: darkgray;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 105px;
+    margin : 30px 550px 20px 550px;
+    border-radius: 20px;
+    color: skyblue;
+
+}
+
+.loginbox {
+    width: 350px ;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black ;
+    margin: 25px ;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 500px;
+}
+
+.usericon {
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    margin-left: 3%;
+    border-radius: 80%;
+    left: calc(50% - 50px);
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(240, 227, 227);
+}
+
+
+.adminbox {
+    width: 280px ;
+    position: absolute;
+    top: 52%;
+    right: 8%;
+    transform: translate(-50%, -50%);
+    color: black ;
+    margin: 25px;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0 0 0;
+    margin: 8px 0 0 0;
+    border-bottom: 1px solid white;
+}
+
+.textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+    color: black;
+    margin: 6px 0px 0px 0px
+}
+
+.textbox input {
+    border: none ;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 6px 10px;
+}
+
+.btn {
+    width: 80% ;
+    background: black;
+    border: 2px solid white;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin: 30px 0px 0px 30px;
+}
+
+::placeholder {
+    color: aliceblue;
+}
+
+a:hover {
+    background-color: white;
+    cursor: pointer;
+}
