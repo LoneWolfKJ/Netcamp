@@ -12,20 +12,20 @@
         android:id="@+id/sub"
         android:layout_width="71dp"
         android:layout_height="58dp"
-        android:layout_below="@+id/cale2"
+        android:layout_below="@+id/cale1"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="91dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:background="@drawable/calc_options"
         android:fontFamily="sans-serif-black"
         android:text="-"
         android:textColor="@android:color/white"
         android:textSize="40dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="234dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/mul"
@@ -52,9 +52,11 @@
         android:layout_below="@+id/sub"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="77dp"
         android:background="@drawable/calc_options"
         android:text="/"
         android:textColor="@android:color/white"
@@ -65,17 +67,15 @@
 
     <Button
         android:id="@+id/equal"
-        android:layout_width="71dp"
-        android:layout_height="58dp"
+        android:layout_width="73dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/div"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
         android:background="@drawable/equalcalc"
         android:text="="
         android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="135dp"
-        android:layout_alignParentBottom="true"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="522dp"
         tools:ignore="MissingConstraints" />
 
 
@@ -83,27 +83,37 @@
         android:id="@+id/cale1"
         android:layout_width="80dp"
         android:layout_height="61dp"
+        android:layout_below="@id/calcback"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@android:drawable/screen_background_light"
-        android:layout_marginStart="73dp"
-        android:layout_marginLeft="73dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="104dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/sign"
+        android:layout_toLeftOf="@+id/sign"
+        android:background="@android:drawable/screen_background_light"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="117dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/cale2"
         android:layout_width="80dp"
         android:layout_height="61dp"
+        android:layout_alignTop="@id/cale1"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="106dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="73dp"
+        android:layout_toEndOf="@+id/sign"
         android:layout_toRightOf="@+id/sign"
         android:background="@android:drawable/screen_background_light"
         android:ems="10"
@@ -112,13 +122,6 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="117dp" />
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        >
 
         <ImageView
             android:id="@+id/calcback"
@@ -142,16 +145,6 @@
             android:layout_alignParentRight="true"
             app:srcCompat="@drawable/ic_refresh_black_24dp" />
 
-
-    </RelativeLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
     <Button
         android:id="@+id/add"
         android:layout_width="71dp"
@@ -161,7 +154,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="79dp"
         android:background="@drawable/calc_options"
         android:text="+"
         android:textColor="@android:color/white"
@@ -187,10 +180,10 @@
         android:layout_width="41dp"
         android:layout_height="48dp"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="105dp"
-        android:layout_toRightOf="@+id/cale1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="108dp"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         android:textSize="50dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="188dp"

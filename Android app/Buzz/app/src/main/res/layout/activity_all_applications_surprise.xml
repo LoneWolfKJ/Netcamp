@@ -31,8 +31,8 @@
         android:id="@+id/quizButton"
         android:layout_width="175dp"
         android:layout_height="190dp"
+        android:layout_below="@id/logout"
         android:layout_centerInParent="true"
-        android:layout_above="@+id/magicalMusicPlayerButton"
         android:layout_marginBottom="50dp"
         android:src="@mipmap/quiz_foreground" />
 
@@ -42,6 +42,7 @@
         android:layout_height="220dp"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
+        android:layout_below="@id/quizButton"
         android:layout_marginBottom="70dp"
         android:contentDescription="Magical Musical Player"
         android:src="@mipmap/magical_music_player_foreground" />
