@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     /* pointer-events: none; */
-    background: url(library.jpg) no-repeat;
+    background: url("../pictures/library.jpg") no-repeat;
     background-size: cover;
     height: 100%;
     

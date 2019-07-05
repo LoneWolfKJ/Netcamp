@@ -1,0 +1,272 @@
+[3:33 PM, 7/1/2019] Raghav Loda: body {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* pointer-events: none; */
+   
+    
+}
+.content {
+    position: fixed;
+    z-index: 999;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bgimage{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../pictures/library.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.name {
+    font-family: cursive;
+    font-weight: 1000;
+    font-size: 75px;
+    text-align: left;
+    color: darkgray;
+    height: 105px;
+    width: 87%;
+    margin : 15px 200px 20px 130px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+}
+
+.bit {
+    height: 100px;
+    position: fixed;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+.title {
+    font-family: cursive;
+    font-weight: 1200;
+    font-size: 75px;
+    text-align: center;
+    color: darkgray;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 105px;
+    margin : 30px 550px 20px 550px;
+    border-radius: 20px;
+    color: skyblue;
+
+}
+
+.uptitle {
+    font-family: cursive;
+    font-weight: 1200;
+    font-size: 75px;
+    color: darkgray;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    height: 105px;
+    margin : 30px 200px 20px 400px;
+    border-radius: 20px;
+    color: skyblue;
+}
+
+.loginbox {
+    width: 360px ;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    z-index:1055;
+    transform: translate(-50%, -50%);
+    color: white ;
+    margin: 25px ;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
+}
+
+.signupbox {
+    width: 450px ;
+    position: relative;
+    top: -100%;
+    left: 50%;
+    z-index:1055;
+    transform: translate(-50%, -1%);
+    color: white ;
+    margin: 25px ;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 778px;
+}
+
+.adloginbox {
+    width: 400px ;
+    position: relative;
+    top: 250%;
+    left: 50%;
+    z-index:1055;
+    transform: translate(-50%, 20%);
+    color: white ;
+    margin: 25px ;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 420px;
+}
+
+.updatebox {
+    width: 450px ;
+    position: relative;
+    left: 55%;
+    z-index:1055;
+    transform: translate(-50%,0% );
+    color: white ;
+    margin: 25px ;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 630px;
+}
+
+.usericon {
+    width: 130px;
+    height: 120px;
+    top: 20px;
+    border-radius: 80%;
+    left: calc(50% - 50px);
+    box-sizing: border-box;
+    position: absolute;
+    background: white;
+}
+
+
+.adminbox {
+    width: 280px ;
+    position: absolute;
+    top: 52%;
+    right: 8%;
+    transform: translate(-50%, -50%);
+    color: black ;
+    margin: 25px;
+    box-sizing: border-box;
+    padding: 150px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+.textbox {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 25px;
+    padding: 0px 0 0 0;
+    margin: 15px 0 0 0;
+    border-bottom: 1px solid white;
+}
+
+.textbox i {
+    width: 35px;
+    float: left;
+    text-align: center;
+    color: white;
+    margin: 20px 0px 0px 0px
+}
+
+.textbox input {
+    border: none ;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 6px 10px;
+    height: 50px;
+}
+
+.btn {
+    width: 80% ;
+    background: black;
+    border: 2px solid white;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0px 0px 30px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.subtn {
+    width: 80% ;
+    background: black;
+    border: 2px solid white;
+    color: black;
+    padding: 5px;
+    position: relative;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin: 2px 0px 0px 30px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.adbtn {
+    width: 90% ;
+    background: black;
+    border: 2px solid white;
+    color: black;
+    padding: 5px;
+    position: relative;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    margin: 2px 0px 0px 20px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.fyp {
+    margin: 500px 30px 80px 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.laa {
+    width: 100% ;
+    background: black;
+    border: 2px solid white;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin: 25px 0px 0px 5px;
+    height: 70px;
+    border-radius: 10px;
+    
+}
+
+.btn:hover, .subtn:hover, .adbtn:hover, .laa:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
+}

@@ -1,11 +1,15 @@
 <?php
 session_start();
+if(!(isset($_SESSION['user']) && $_SESSION['user'] != "" && $_SESSION['admin'] == "true"))
+{
+		header("location:logout.php");
+}
 ?>
 <?php
 $con = mysqli_connect('localhost', 'root', 'root');
 if (!$con)
   {
-  die('Could not connect: ' . mysqli_error());
+  die('Could not connect: ' . mysqli_error($con));
   }
 mysqli_select_db($con,"admin");
 ?>
@@ -16,7 +20,8 @@ mysqli_select_db($con,"admin");
 	$sql = "select * from users where username='$user'";
 	$result= mysqli_query($con,$sql);
 	$num = mysqli_num_rows($result);
-    $password = $result[1];
+	$result=mysqli_fetch_assoc($result);
+    $password = $result['password'];
     if(	$num==0)
 	{
 		echo "No such user exist";

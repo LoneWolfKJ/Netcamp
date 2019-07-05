@@ -1,0 +1,33 @@
+#h{
+    text-align: left;    font-family: 'Times New Roman';    font-size: 60px;     margin-left: 20px;
+    color: darkmagenta;    transform: translateY(-50%);
+}
+
+.main {
+    transform: translateX(1%);    margin: 40px 50px 0px 0px;    border: 2px solid black;    font-weight: bold;
+    font-size: 30px;    text-align: justify;    background-color: lightgrey;
+}
+
+.form {
+    transform: translate(20%,-10%);
+}
+
+.cards {
+    float: right;    position: absolute;    transform: translate(250%, -100%)
+}
+
+#box1 {
+    height: 32px;    border-radius: 6px;    width: 300px;    margin-left: 90px;
+}
+
+#box2 {
+    height: 32px;    border-radius: 6px;    width: 300px;    margin-left: 3.5px;
+}
+
+#box3, #box4{
+    height: 32px; border-radius: 6px;   width: 177px;  margin-right: 20px;
+}
+
+#red {
+    width: 150px; height: 40px; background-color: skyblue; border-radius: 10px; font-size: 15px;
+}

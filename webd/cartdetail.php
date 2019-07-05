@@ -1,43 +1,76 @@
 <?php
-$idtobeadded = $_POST['bookid'];
-$user= $_POST['username'];
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password="root"; // Mysql password 
-$db_name="books"; // Database name 
-$tb1_name = "books"; // collection name
-$tb2_name="cart"; // carts
-
-$con=mysqli_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysqli_select_db($con,"$db_name")or die("cannot select DB");
-
-$sql="SELECT * FROM $tbl_name WHERE bookid='$idtobeadded' LIMIT 1";
-$result=mysql_query($sql);
-
-//0-bookid
-//1-bookname
-//2-date
-//3-quantity
-//4-status
-//5-bookdesc
-//6-price
-
-$row=mysql_fetch_array($result);
-$bookname = $row[1];
-$bookprice= $row[6];
-
-$sq2 = "SELECT * FROM $tb2_name WHERE username='$user'";
-$result2=mysql_query($sq2);
-$row = mysql_num_rows($result2);
-
-$query1 = "INSERT INTO $tb2_name(username,booksid,booksname,total) values ('$user','$idtobeadded','$bookname','$bookprice')";
-mysql_query($query1);
-//igonre - were trying to go and store as array but then found out when using serialize/unserialize would have
-// to handle null values since it converts into bytes. so shifted to another method.
-// $array = array("my", "litte", "array", 2);
-// $serialized_array = serialize($array); 
-// $unserialized_array = unserialize($serialized_array); 
-
-// var_dump($serialized_array); // gives back a string, perfectly for db saving!
-// var_dump($unserialized_array);
+session_start();
+if(!(isset($_SESSION['username']) && $_SESSION['username'] != ""))
+{
+    header("location:login.php");
+} else {
+$user=$_SESSION['username'];
+}
 ?>
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/first.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="card" style="padding:5vw;margin-top:20px;">
+    <div class="card-text">
+    <?php
+        //$idtobeadded = $_GET['bookid'];
+        $host="localhost"; // Host name 
+        $mysqlusername="root"; // Mysql username 
+        $password="root"; // Mysql password 
+        $db_name="library"; // Database name 
+        $tb1_name = "books"; // collection name
+        $tb2_name="carts"; // carts
+
+        //$username = $_SESSION['username'];
+
+        $con=mysqli_connect("$host", "$mysqlusername", "$password")or die("cannot connect"); 
+        mysqli_select_db($con,"$db_name")or die("cannot select DB");
+
+        $sql="SELECT * FROM carts WHERE username='$user'";
+        $result=mysqli_query($con,$sql);
+        echo mysqli_error($con);
+        $total=0;
+        echo "<table><tr>
+                <th>Book Id</th>
+                <th>Book Name</th>
+                <th>Price</th>
+                <th></th>
+                </tr>";
+        while($row=mysqli_fetch_assoc($result)){
+            echo "<tr>
+                <td>$row[bookid]</td>
+                <td>$row[bookname]</td>
+                <td>$row[price]</td>";
+                ?>
+                <td><a href="http://localhost/deletebook.php?bookid=<?php echo $row['bookid'];?>" class="btn btn-danger">
+                Remove
+            </a></td>
+            <?php
+                echo "</tr>";
+            $total+=$row['price'];
+
+        }
+        echo "</table>";
+        echo "<table>";
+        echo "<tr>
+        <th>Total</th>
+        <th>$total</th>
+        </tr>";
+        echo "</table";
+        ?>     
+        </div> 
+        </div>
+    </body>
+</html>

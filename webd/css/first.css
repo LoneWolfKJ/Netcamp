@@ -1,0 +1,75 @@
+.zoom {
+    transition: transform .2s; /* Animation */
+    padding: 15px !important;
+    margin: 0 auto;
+  }
+  
+  .btn-zoom {
+    background-color: #008CBA !important;
+    padding: 10px;
+    transition: transform .4s;
+  }
+  
+  .btn-zoom:hover {
+    background-color: #4CAF50 !important;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .zoom:hover {
+      cursor: pointer !important;
+      transform: scale(1.2); 
+}
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../pictures/admin_bg.jpg');
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+  .content {
+    position: relative;
+    overflow-y:auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  a.card,
+  a.card:hover {
+    cursor: pointer !important;
+    color: #212529;
+    text-decoration: none;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+  .card {
+    height: 26vw;
+  }
