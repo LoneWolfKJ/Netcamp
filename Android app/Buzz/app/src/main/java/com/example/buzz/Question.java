@@ -36,7 +36,16 @@ public class Question {
             "Which is heavier? A pound of feathers or a pound of rocks?",
             "A plane crashes on the border of the U.S. and Canada. Where do they bury the survivors?",
             "Which travels faster? Hot or Cold?"
-
+            "If A is substituted by 4, B by 3, C by 2, D by 4, E by 3, F by 2 and so on, then what will be total of the numerical values of the letters of the word SICK?"
+            "Four of the following five are alike in a certain way and hence form a group. Which one does not belong to the group?"  
+          " In a certain code GARNISH is written as RGAINHS. How will GENIOUS be written in that code?"    
+          "On a menu what is Bombay Duck?"
+          "Who was the first Twitter user to reach 20 million followers?"
+          "What animal can run the fastest:"
+          "When is the World AIDS Day observed all over the world?"
+          "Easter falls on which day?"
+          "When was the first television first introduced in India?"   
+          "Octomber 14 is observed as"  
     };
 
     public String[][] choices = {
@@ -49,6 +58,16 @@ public class Question {
             {"The feathers","The rocks","Neither","a pound of diamonds"},
             {"U.S","India","Canada","Nowhere"},
             {"Hot","Cold","Both have same speed","None"}
+            {"11","12","10","9"}
+            {"52","70","48","68"}
+            {"NEGOISU","NGEOISU","NGESUOI","NEGSUOI"}
+            {"Fish","Cake","chocolate","chicken"} 
+            {"Lady Gaga","Shah Rukh khan","Katrina Kaif","None"} 
+            {"Elephant","Squirrel","Cat","none"}
+            {" 1st october","1st December","12th December","12th November"}
+            {"Sunday","Monday","Tuesday","Wednesday"}
+            {"1947","1959","1969","1971"}
+            {" World Information Day","World Animal Welfare Day","World Standards Day","None"}  
     };
 
     public String[] correctAnswer = {
@@ -60,7 +79,17 @@ public class Question {
             "Mt. Everest",
             "Neither",
             "Nowhere",
-            "Hot"
+            "Hot",
+            "11",
+            "70",
+            "NGEOISU",
+            "Fish",
+            "Lady Gaga",
+            "Elephant",
+            "1st December",
+            "Sunday"
+            "1959"
+            "World Standards Day"  
     };
 
     public String getHint(int a) {
