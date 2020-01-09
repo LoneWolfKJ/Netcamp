@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Buzz</string>
     <string name="string_magic_music">Press play and relax, We\'ll take care of your phone:)</string>
+    <string name="facebook_app_id">2995917830426851</string>
+<string name="fb_login_protocol_scheme">fb2995917830426851</string>
 </resources>
